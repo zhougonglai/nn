@@ -1,0 +1,2 @@
+GET https://test-web01.nn.com/nchannel/channel/business/findGameTags/?size=50 HTTP/1.1
+
