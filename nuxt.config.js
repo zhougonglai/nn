@@ -11,48 +11,52 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { href: 'https://res.wx.qq.com/open/libs/weui/2.4.0/weui.min.css' },
+    ],
     script: [
+      { hid: 'iconfont', src: '//at.alicdn.com/t/font_1825109_95q9b1tdfat.js' },
       {
-        src: '//at.alicdn.com/t/font_1825109_95q9b1tdfat.js'
-      }
-    ]
+        hid: 'weuijs',
+        src: 'https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js',
+      },
+    ],
   },
   loading: { color: '#fff' },
   css: ['~/styles/index.scss'],
+  server: {
+    host: '0.0.0.0',
+  },
   plugins: [
     '~/plugins/axios',
     {
       src: '~/plugins/wc',
-      mode: 'client'
-    }
+      mode: 'client',
+    },
   ],
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
-    '@nuxtjs/tailwindcss'
-  ],
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/tailwindcss'],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv', '@nuxtjs/proxy'],
   axios: { proxy: true },
   proxy: {
     '/nchannel': {
       target: 'https://test-web01.nn.com',
-      changeOrigin: true
+      changeOrigin: true,
     },
     '/api': {
-      target: 'https://reqres.in'
-    }
+      target: 'https://reqres.in',
+    },
   },
   vuetify: {
     customVariables: ['~/styles/variables.scss'],
     theme: {
-      dark: true
-    }
+      dark: true,
+    },
   },
   build: {
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }
