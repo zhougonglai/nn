@@ -9,8 +9,7 @@ v-app(dark)
     v-list(v-else-if="menus[$route.name]")
       v-list-item 个人首页
       v-list-group(v-for="(group, i) in menus[$route.name].list"
-      v-model="menus[$route.name].active" :key="group.groupId"
-      @change="navChange")
+      v-model="menus[$route.name].active" :key="group.groupId")
         template(v-slot:activator)
           v-list-item-content
             v-list-item-title(v-text="group.groupName")
