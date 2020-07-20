@@ -10,11 +10,12 @@ export default {
   methods: {
     ...mapActions('channel', ['serverChannelsAction']),
     init() {
+      console.log(this.$route)
       this.serverChannelsAction({
         id: this.$route.params.id,
-        active: this.$route.name
+        active: this.$route.name,
       })
-    }
-  }
+    },
+  },
 }
 </script>
