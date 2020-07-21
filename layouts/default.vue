@@ -1,6 +1,6 @@
 <template lang="pug">
 LazyLocadView(:initFN="init" v-cloak)
-  template(v-slot:loading)
+  template(#loading)
     PageHold
   v-app(dark)
     v-navigation-drawer(v-model="drawer" clipped fixed app disable-resize-watcher disable-route-watcher)

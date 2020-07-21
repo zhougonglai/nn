@@ -2,7 +2,7 @@ export const state = () => ({
   gameTags: [],
   tagServers: {},
   servers: [],
-  serverChannels: {}
+  serverChannels: {},
 })
 
 export const actions = {
@@ -11,38 +11,38 @@ export const actions = {
       {
         gameTagId: 7002,
         isShow: 1,
-        tagName: 'Steam'
+        tagName: 'Steam',
       },
       {
         gameTagId: 7003,
         isShow: 1,
-        tagName: '国服'
+        tagName: '国服',
       },
       {
         gameTagId: 7008,
         isShow: 1,
-        tagName: 'Origin'
+        tagName: 'Origin',
       },
       {
         gameTagId: 7009,
         isShow: 1,
-        tagName: 'Switch'
+        tagName: 'Switch',
       },
       {
         gameTagId: 7010,
         isShow: 1,
-        tagName: 'Epic'
+        tagName: 'Epic',
       },
       {
         gameTagId: 7012,
         isShow: 1,
-        tagName: 'Uplay'
+        tagName: 'Uplay',
       },
       {
         gameTagId: 7013,
         isShow: 1,
-        tagName: '战网'
-      }
+        tagName: '战网',
+      },
     ]
     commit('GAME_TAGS', list)
     commit(
@@ -50,8 +50,8 @@ export const actions = {
       {
         index: {
           active: 0,
-          list
-        }
+          list,
+        },
       },
       { root: true }
     )
@@ -76,7 +76,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/05/rBMjk17XOvGAbtGyAAADeA6r4tc653.png',
         userId: 8105,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -95,7 +95,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8109,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -114,7 +114,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8110,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -133,7 +133,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8112,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -152,7 +152,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8114,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -171,7 +171,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8113,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -190,7 +190,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8116,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -209,7 +209,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8115,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -228,7 +228,7 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8118,
-        userUrlNn: ''
+        userUrlNn: '',
       },
       {
         backImgUrl:
@@ -247,8 +247,8 @@ export const actions = {
         smallImgUrl:
           'http://test-dfs01.nn.com//group1/M00/00/1D/rBMjk17XPTuASOjOAAA_y75I8zU089.png',
         userId: 8120,
-        userUrlNn: ''
-      }
+        userUrlNn: '',
+      },
     ]
     commit('TAG_SERVERS', { gameTagId, servers })
     return servers
@@ -265,7 +265,7 @@ export const actions = {
         sort: 0,
         userId: 4945,
         userUrlNn:
-          'https://dfs01.nn.com/group1/M00/00/00/rBMjhl7SQ2aAJ6fTAAAUqNTiYOs550.png'
+          'https://dfs01.nn.com/group1/M00/00/19/rB8AIF8RSeyACRJoAAAKmXbq74c060.png',
       },
       {
         nickName: '绝地求生',
@@ -277,7 +277,7 @@ export const actions = {
         sort: 0,
         userId: 4945,
         userUrlNn:
-          'http://test-dfs01.nn.com//group1/M00/00/05/rBMjk17XOvGAbtGyAAADeA6r4tc653.png'
+          'http://test-dfs01.nn.com//group1/M00/00/05/rBMjk17XOvGAbtGyAAADeA6r4tc653.png',
       },
       {
         nickName: 'zfm',
@@ -289,8 +289,8 @@ export const actions = {
         sort: 0,
         userId: 4945,
         userUrlNn:
-          'http://test-dfs01.nn.com/group1/M00/00/39/rBMjk17Z6VmAIU-5AAAmUIEU69s147.png'
-      }
+          'http://test-dfs01.nn.com/group1/M00/00/39/rBMjk17Z6VmAIU-5AAAmUIEU69s147.png',
+      },
     ]
     commit('SERVERS', servers)
     return servers
@@ -304,14 +304,14 @@ export const actions = {
           {
             channelId: Math.floor(Math.random() * 1000000),
             channelName: '绝地逃生',
-            channelType: 1
+            channelType: 1,
           },
           {
             channelId: Math.floor(Math.random() * 1000000),
             channelName: '逃难',
-            channelType: 2
-          }
-        ]
+            channelType: 2,
+          },
+        ],
       },
       {
         groupId: Math.floor(Math.random() * 1000),
@@ -320,15 +320,15 @@ export const actions = {
           {
             channelId: Math.floor(Math.random() * 1000000),
             channelName: '孤岛惊魂',
-            channelType: 1
+            channelType: 1,
           },
           {
             channelId: Math.floor(Math.random() * 1000000),
             channelName: '大逃杀',
-            channelType: 4
-          }
-        ]
-      }
+            channelType: 4,
+          },
+        ],
+      },
     ]
     commit('SERVER_CHANNELS', { id, list: serverChannels })
     commit(
@@ -336,13 +336,13 @@ export const actions = {
       {
         [active]: {
           active: 0,
-          list: serverChannels
-        }
+          list: serverChannels,
+        },
       },
       { root: true }
     )
     return serverChannels
-  }
+  },
 }
 
 export const mutations = {
@@ -357,5 +357,5 @@ export const mutations = {
   },
   TAG_SERVERS(state, { gameTagId, servers }) {
     state.tagServers[gameTagId] = servers
-  }
+  },
 }

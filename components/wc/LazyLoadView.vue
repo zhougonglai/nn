@@ -25,7 +25,6 @@ export default {
   methods: {
     initSlot() {
       this.ready = true
-      console.log('initSlot', this)
     },
   },
 }
