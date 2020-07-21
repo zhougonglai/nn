@@ -92,10 +92,10 @@ export default {
     ...mapActions('channel', ['serversAction']),
     ...mapMutations(['ACTIVE']),
     async init() {
-      return new Promise(async (resolve) => {
-        await this.serversAction()
-        setTimeout(resolve, 6000)
-      })
+      return await this.serversAction()
+      // return new Promise(async (resolve) => {
+      // setTimeout(resolve, 6000)
+      // })
     },
     navChange() {
       if (this.$vuetify.breakpoint.md) {

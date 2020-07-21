@@ -1,7 +1,12 @@
 <template lang="pug">
 v-layout
   .grid.gap-4(v-if="ready" class="xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2")
-    v-card.mx-auto(v-for="server in tagServers[activeMenu('index').list[activeMenu('index').active].gameTagId]" max-width="400" :key="server.serverId")
+    v-card.mx-auto(
+      v-for="server in tagServers[activeMenu('index').list[activeMenu('index').active].gameTagId]"
+      max-width="400"
+      nuxt
+      :to="`/server/${server.serverId}`"
+      :key="server.serverId")
       v-img(:src="server.bigImgUrl")
       v-card-title(v-text="server.serverName")
       v-card-subtitle(v-text="server.intor")
